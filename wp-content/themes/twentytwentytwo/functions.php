@@ -149,3 +149,6 @@ add_action( 'wp_head', 'twentytwentytwo_preload_webfonts' );
 
 // Add block patterns
 require get_template_directory() . '/inc/block-patterns.php';
+@ini_set( 'upload_max_size' , '120M' );
+@ini_set( 'post_max_size', '120M');
+@ini_set( 'max_execution_time', '300' );
